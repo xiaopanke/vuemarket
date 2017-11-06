@@ -1,18 +1,20 @@
 <template>
-  <div class="hello">
-    <Counter />
+  <div class="">
+  title
   </div>
 </template>
 
 <script>
-import Counter from './Counter'
 export default {
   data () {
     return {
+
     }
   },
-  components:{
-    Counter
+  mounted(){
+  },
+  methods:{
+
   }
 }
 </script>
