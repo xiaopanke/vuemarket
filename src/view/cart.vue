@@ -1,6 +1,7 @@
 <template>
   <div class="">
   购物车
+  <span>{{$route.query.goodId}}</span>
   </div>
 </template>
 

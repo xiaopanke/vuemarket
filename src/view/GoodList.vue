@@ -20,7 +20,8 @@ export default {
   },
   methods:{
     jump(){
-      this.$router.push('/cart')
+      //this.$router.push('/cart')
+      this.$router.push({path:'/cart?goodId=123'})
     }
   }
 }
