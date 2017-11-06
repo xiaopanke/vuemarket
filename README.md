@@ -37,15 +37,27 @@ show 终端：
 ```
 show dbs
 ```
-
-
 切换到admin数据库：
 ```
 use admin
 ```
+创建账号：
+```
+db.createUser({user:'admin',pwd:'admin',roles:['root']})
+```
+认证：
+```
+db.auth('admin','admin')
+```
+返回1表示认证成功
 
 
-切换到admin数据库：
+切换到test数据库：
 ```
-use admin
+use test
 ```
+给test创建账号：
+```
+db.createUser({user:'root',pwd:'123456',roles:[{role:'dbOwner',db:'test'}]})
+```
+roles里db  表示他只能访问test这个数据库
